@@ -55,7 +55,11 @@ video {
   font-size: 40px;
   text-align: center;
 }
-.item:hover {
+.wrapper-hover .item:hover,
+.wrapper-transition .item:hover,
+.wrapper-delay .item:hover,
+.wrapper-two-properties .item:hover,
+.wrapper-delay-one-property .item:hover {
   background-color: #f72585;
 }
 
@@ -114,4 +118,20 @@ video {
 }
 .wrapper-parent-children-delay .item {
   transition: background-color 0.5s 0.5s;
+}
+
+.wrapper-translate .item,
+.wrapper-rotate .item,
+.wrapper-scale .item {
+  transition: transform 0.5s;
+}
+.wrapper-translate .item:hover {
+  transform: translateY(25px);
+}
+
+.wrapper-rotate .item:hover {
+  transform: rotate(90deg);
+}
+.wrapper-scale .item:hover {
+  transform: scale(120%);
 }
