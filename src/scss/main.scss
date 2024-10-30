@@ -58,6 +58,11 @@ video {
 .item:hover {
   background-color: #f72585;
 }
-// ---------------------------------------------
-// Votre code ici :
-// ---------------------------------------------
+
+.wrapper-transition .item {
+  transition: background-color 0.5s;
+}
+
+.wrapper-delay .item {
+  transition: background-color 0.5s 0.5s;
+}
